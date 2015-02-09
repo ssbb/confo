@@ -1,8 +1,8 @@
 #+TITLE: confo
 #+EMAIL: mail@ssbb.me
 #+OPTIONS: creator:comment d:(not LOGBOOK) date:t e:t email:t f:t inline:t
+#+DATE: [2015-02-10 Tue]
 #+LANGUAGE: en
-#+DATE: <2015-02-10 Tue>
 #+HTML_HEAD: <link href=//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic,latin rel='stylesheet' type='text/css'>
 #+HTML_HEAD: <link href='//fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 #+HTML_HEAD: <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
