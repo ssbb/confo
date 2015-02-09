@@ -5,11 +5,11 @@
 #+LANGUAGE: en
 #+HTML_HEAD: <link href=//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic,latin rel='stylesheet' type='text/css'>
 #+HTML_HEAD: <link href='//fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-#+HTML_HEAD: <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
-#+HTML_HEAD: <link href="http://evilrobts.com//css/docs.css" rel="stylesheet" type="text/css" />
+#+HTML_HEAD: <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+#+HTML_HEAD: <link href="http://evilrobts.com/css/docs.css" rel="stylesheet" type="text/css" />
 #+HTML_HEAD: <style>table {width: 100%;}</style>
-#+HTML_HEAD: <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-#+HTML_HEAD: <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+#+HTML_HEAD: <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+#+HTML_HEAD: <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 #+HTML_HEAD: <script src="http://evilrobts.com/js/docs.js"></script>
 
 #+BEGIN_HTML
