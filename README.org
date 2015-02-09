@@ -1,0 +1,3 @@
+* confo - simple config file reader
+*Under development!*
+Managing configs for different environments in =js= or =json= format.
