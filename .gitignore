@@ -1,2 +1,4 @@
 node_modules
 README.html
+*.log
+.DS_Store
