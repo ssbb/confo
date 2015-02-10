@@ -21,7 +21,7 @@ Managing configs for different environments (based on =NODE_ENV= variable) in =j
 
 ** How to use
 - Install it with =npm install confo=
-- Create a =confo.json= file in the same folder as the main entry point (usually project root). This file must contain an =NODE_ENV: PATH= JSON object like this:
+- Create a =confo.json= file in the same folder as the main entry point (usually project root). This file must contain a =NODE_ENV: PATH= JSON object like this:
 
   #+CAPTION: confo.json
   #+BEGIN_SRC javascript
