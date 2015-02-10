@@ -20,6 +20,8 @@ Managing configs for different environments (based on =NODE_ENV= variable) in =j
     "test": "./config/environments/test.js"
   }
   #+END_SRC
+
+  Also you can set =CONFO_FILE= environment variable with full path to =confo.json= file.
 - Create a config file. I prefer to write config files with =JavaScript=. It gives me the opportunity to use the language features like path joining or extending a base config. But you can use =JSON= as well.
 
   #+CAPTION: config/environments/dev.js
