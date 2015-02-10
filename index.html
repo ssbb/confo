@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>confo</title>
-<!-- 2015-02-10 Tue 14:03 -->
+<!-- 2015-02-10 Tue 14:27 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Svyatoslav Bulbakha" />
@@ -88,14 +88,14 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
-<link href=//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic,latin rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
-<link href="http://evilrobts.com/css/docs.css" rel="stylesheet" type="text/css" />
+<link href=http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic,latin rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/tomorrow-night-bright.min.css">
+<link href="http://localhost:8000/docs.css" rel="stylesheet" type="text/css" />
 <style>table {width: 100%;}</style>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://evilrobts.com/js/docs.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://localhost:8000/docs.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -159,13 +159,13 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<a href="https://github.com/evilrobts/confo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+<a href="https://github.com/evilrobts/confo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1">confo - simple config file reader</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Managing configs for different environments in <code>js</code> or <code>json</code> format.
+Managing configs for different environments (based on <code>NODE_ENV</code> variable) in <code>js</code> or <code>json</code> format.
 </p>
 </div>
 
@@ -175,22 +175,22 @@ Managing configs for different environments in <code>js</code> or <code>json</co
 <ul class="org-ul">
 <li>Install it with <code>npm install confo</code>
 </li>
-<li>Create a <code>confo.json</code> file in the same folder as the main entry point (usually project root). This file must contain a <code>env: path</code> JSON object like this:
+<li>Create a <code>confo.json</code> file in the same folder as the main entry point (usually project root). This file must contain an <code>NODE_ENV: PATH</code> JSON object like this:
 
 <div class="org-src-container">
-
+<label class="org-src-name">confo.json</label>
 <pre class="src src-javascript"><span style="color: #eaeaea;">{</span>
   <span style="color: #70c0b1;">"dev"</span>: <span style="color: #70c0b1;">"./config/environments/dev.js"</span>,
   <span style="color: #70c0b1;">"production"</span>: <span style="color: #70c0b1;">"./config/environments/production.js"</span>,
-  <span style="color: #70c0b1;">"test"</span>: <span style="color: #70c0b1;">"./config/environments/.js"</span>
+  <span style="color: #70c0b1;">"test"</span>: <span style="color: #70c0b1;">"./config/environments/test.js"</span>
 <span style="color: #eaeaea;">}</span>
 </pre>
 </div>
 </li>
-<li>Create a config file. I prefer to write config files with <code>JavaScript</code>. It gives me the opportunity to use the language features like path joining or extend a base config. But you can use <code>JSON</code> too.
+<li>Create a config file. I prefer to write config files with <code>JavaScript</code>. It gives me the opportunity to use the language features like path joining or extending a base config. But you can use <code>JSON</code> as well.
 
 <div class="org-src-container">
-<label class="org-src-name">Example configuration file dev.js</label>
+<label class="org-src-name">config/environments/dev.js</label>
 <pre class="src src-javascript"><span style="color: #b9ca4a;">var</span> <span style="color: #e7c547;">config</span> = require<span style="color: #eaeaea;">(</span><span style="color: #70c0b1;">'./base.js'</span><span style="color: #eaeaea;">)</span>;
 
 config.db.port = 28017;
@@ -204,7 +204,7 @@ module.exports = config;
 <li>Just require <code>confo</code> and use it:
 
 <div class="org-src-container">
-
+<label class="org-src-name">app.js</label>
 <pre class="src src-javascript"><span style="color: #b9ca4a;">var</span> <span style="color: #e7c547;">confo</span> = require<span style="color: #eaeaea;">(</span><span style="color: #70c0b1;">'confo'</span><span style="color: #eaeaea;">)</span>;
 
 console.log<span style="color: #eaeaea;">(</span>confo.db.host<span style="color: #eaeaea;">)</span>;
@@ -212,7 +212,7 @@ console.log<span style="color: #eaeaea;">(</span>confo.db.host<span style="color
 </div>
 </li>
 
-<li>That's it!
+<li>That's all!
 </li>
 </ul>
 </div>
