@@ -17,8 +17,6 @@
 #+END_HTML
 
 * confo - simple config file reader
-*Under development!*
-
 Managing configs for different environments in =js= or =json= format.
 
 ** How to use
@@ -38,7 +36,7 @@ Managing configs for different environments in =js= or =json= format.
   #+BEGIN_SRC javascript
   var config = require('./base.js');
 
-  config.db.port = 9000;
+  config.db.port = 28017;
   config.db.host = '127.0.0.1';
 
   module.exports = config;
