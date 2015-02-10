@@ -18,7 +18,7 @@ var load = function(env) {
   rcPath = path.join(rcRoot, 'confo.json');
 
   if (env.CONFO_FILE || process.env.CONFO_FILE) {
-    rcPath = path.resolve(env.CONFO_FILE || process.env.CONFO_FILE);
+    rcPath = env.CONFO_FILE || process.env.CONFO_FILE;
   }
 
   try {

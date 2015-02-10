@@ -21,7 +21,7 @@ describe('confo', function() {
   });
   it('should respect CONFO_FILE env variable', function() {
     assert.equal(this.confo._confo.rcPath,
-                 path.resolve(process.env.CONFO_FILE));
+                 process.env.CONFO_FILE);
   });
   it('should throw an error if rc file was not found', function() {
     assert.throws(function() {
