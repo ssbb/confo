@@ -41,7 +41,7 @@ var load = function(env) {
   try {
     config = require(configPath);
   } catch (e) {
-    console.error('Could not find or load config file at'.red, configPath.blue);
+    console.error('Can\'t find or load config file at'.red, configPath.blue);
     throw e;
   }
 
