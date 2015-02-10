@@ -1,7 +1,7 @@
 * confo - simple config file reader
 [[https://www.npmjs.com/package/confo][http://img.shields.io/npm/v/confo.svg]]
 [[https://www.npmjs.com/package/confo][http://img.shields.io/npm/l/confo.svg]]
-[[https://www.npmjs.com/package/confo][http://img.shields.io/github/stars/evilrobts/confo.svg]]
+[[https://github.com/evilrobts/confo][http://img.shields.io/github/stars/evilrobts/confo.svg]]
 [[https://www.npmjs.com/package/confo][http://img.shields.io/npm/dm/confo.svg]]
 [[https://img.shields.io/travis/joyent/node.svg][http://img.shields.io/travis/evilrobts/confo.svg]]
 [[https://img.shields.io/coveralls/jekyll/jekyll.svg][http://img.shields.io/coveralls/evilrobts/confo.svg]]
