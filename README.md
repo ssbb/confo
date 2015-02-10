@@ -14,12 +14,12 @@
 
 # confo - simple config file reader<a id="sec-1" name="sec-1"></a>
 
-[![img](//img.shields.io/npm/v/confo.svg)](https://www.npmjs.com/package/confo)
-[![img](//img.shields.io/npm/l/confo.svg)](https://www.npmjs.com/package/confo)
-[![img](//img.shields.io/github/stars/evilrobts/confo.svg)](https://www.npmjs.com/package/confo)
-[![img](//img.shields.io/npm/dm/confo.svg)](https://www.npmjs.com/package/confo)
-[![img](//img.shields.io/travis/evilrobts/confo.svg)](https://img.shields.io/travis/joyent/node.svg)
-[![img](//img.shields.io/coveralls/evilrobts/confo.svg)](https://img.shields.io/coveralls/jekyll/jekyll.svg)
+![img](//img.shields.io/npm/v/confo.svg)
+![img](//img.shields.io/npm/l/confo.svg)
+![img](//img.shields.io/github/stars/evilrobts/confo.svg)
+![img](//img.shields.io/npm/dm/confo.svg)
+![img](//img.shields.io/travis/evilrobts/confo.svg)
+![img](//img.shields.io/coveralls/evilrobts/confo.svg)
 
 Managing configs for different environments (based on `NODE_ENV` variable) in `js` or `json` format.
 
