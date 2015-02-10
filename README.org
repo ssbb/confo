@@ -1,20 +1,21 @@
 * confo - simple config file reader
-Managing configs for different environments in =js= or =json= format.
+Managing configs for different environments (based on =NODE_ENV= variable) in =js= or =json= format.
 
 ** How to use
 - Install it with =npm install confo=
-- Create a =confo.json= file in the same folder as the main entry point (usually project root). This file must contain a =env: path= JSON object like this:
+- Create a =confo.json= file in the same folder as the main entry point (usually project root). This file must contain an =NODE_ENV: PATH= JSON object like this:
 
+  #+CAPTION: confo.json
   #+BEGIN_SRC javascript
   {
     "dev": "./config/environments/dev.js",
     "production": "./config/environments/production.js",
-    "test": "./config/environments/.js"
+    "test": "./config/environments/test.js"
   }
   #+END_SRC
-- Create a config file. I prefer to write config files with =JavaScript=. It gives me the opportunity to use the language features like path joining or extend a base config. But you can use =JSON= too.
+- Create a config file. I prefer to write config files with =JavaScript=. It gives me the opportunity to use the language features like path joining or extending a base config. But you can use =JSON= as well.
 
-  #+CAPTION: Example configuration file dev.js
+  #+CAPTION: config/environments/dev.js
   #+BEGIN_SRC javascript
   var config = require('./base.js');
 
@@ -26,12 +27,13 @@ Managing configs for different environments in =js= or =json= format.
 
 - Just require =confo= and use it:
 
+  #+CAPTION: app.js
   #+BEGIN_SRC javascript
   var confo = require('confo');
 
   console.log(confo.db.host);
   #+END_SRC
 
-- That's it!
+- That's all!
 ** License
 MIT
