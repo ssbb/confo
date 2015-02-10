@@ -1,6 +1,6 @@
 {
   "name": "confo",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Simple config file reader.",
   "main": "index.js",
   "scripts": {
