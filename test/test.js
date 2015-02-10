@@ -1,6 +1,5 @@
 var path = require('path');
 var assert = require('assert');
-var sinon = require('sinon');
 
 
 describe('confo', function() {
