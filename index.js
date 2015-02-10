@@ -1,6 +1,5 @@
 var path = require('path');
 var fs = require('fs');
-var winston = require('winston');
 
 
 var config;
