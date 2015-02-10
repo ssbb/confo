@@ -1,0 +1,6 @@
+{
+  "dev": "./environments/dev.js",
+  "production": "./environments/production.js",
+  "test": "./environments/test.js",
+  "errenv": "./environments/errenv.js"
+}
