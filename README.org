@@ -1,4 +1,11 @@
 * confo - simple config file reader
+[[https://www.npmjs.com/package/confo][https://img.shields.io/npm/v/confo.svg]]
+[[https://www.npmjs.com/package/confo][https://img.shields.io/npm/l/confo.svg]]
+[[https://www.npmjs.com/package/confo][https://img.shields.io/github/stars/evilrobts/confo.svg]]
+[[https://www.npmjs.com/package/confo][https://img.shields.io/npm/dm/confo.svg]]
+[[https://img.shields.io/travis/joyent/node.svg][https://img.shields.io/travis/evilrobts/confo.svg]]
+[[https://img.shields.io/coveralls/jekyll/jekyll.svg][https://img.shields.io/coveralls/evilrobts/confo.svg]]
+
 Managing configs for different environments (based on =NODE_ENV= variable) in =js= or =json= format.
 
 ** How to use
