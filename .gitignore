@@ -2,3 +2,5 @@ node_modules
 README.html
 *.log
 .DS_Store
+index.html
+index.org
