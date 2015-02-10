@@ -18,8 +18,8 @@
 [![img](http://img.shields.io/npm/l/confo.svg)](https://www.npmjs.com/package/confo)
 [![img](http://img.shields.io/github/stars/evilrobts/confo.svg)](https://www.npmjs.com/package/confo)
 [![img](http://img.shields.io/npm/dm/confo.svg)](https://www.npmjs.com/package/confo)
-[![img](http://img.shields.io/travis/evilrobts/confo.svg)](https://img.shields.io/travis/joyent/node.svg)
-[![img](http://img.shields.io/coveralls/evilrobts/confo.svg)](https://img.shields.io/coveralls/jekyll/jekyll.svg)
+[![img](http://img.shields.io/travis/EvilRobts/confo.svg)](https://travis-ci.org/EvilRobts/confo)
+[![img](http://img.shields.io/coveralls/EvilRobts/confo.svg)](https://coveralls.io/r/EvilRobts/confo)
 
 Managing configs for different environments (based on `NODE_ENV` variable) in `js` or `json` format.
 
