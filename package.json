@@ -1,12 +1,16 @@
 {
   "name": "confo",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Simple config file reader.",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test CONFO_FILE=./test/confo.json ./node_modules/mocha/bin/mocha --reporter nyan test/",
     "test-cov": "NODE_ENV=test CONFO_FILE=./test/confo.json istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/",
     "test-travis": "NODE_ENV=test CONFO_FILE=./test/confo.json istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/evilrobts/confo"
   },
   "keywords": [
     "conf",

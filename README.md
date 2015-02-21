@@ -16,7 +16,7 @@
 
 [![img](http://img.shields.io/npm/v/confo.svg)](https://www.npmjs.com/package/confo)
 [![img](http://img.shields.io/npm/l/confo.svg)](https://www.npmjs.com/package/confo)
-[![img](http://img.shields.io/github/stars/evilrobts/confo.svg)](https://www.npmjs.com/package/confo)
+[![img](http://img.shields.io/github/stars/evilrobts/confo.svg)](https://github.com/evilrobts/confo)
 [![img](http://img.shields.io/npm/dm/confo.svg)](https://www.npmjs.com/package/confo)
 [![img](http://img.shields.io/travis/evilrobts/confo.svg)](https://travis-ci.org/evilrobts/confo)
 [![img](http://img.shields.io/coveralls/evilrobts/confo.svg)](https://coveralls.io/r/evilrobts/confo)
