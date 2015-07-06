@@ -1,25 +1,11 @@
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">confo - simple config file reader</a>
-<ul>
-<li><a href="#sec-1-1">How to use</a></li>
-<li><a href="#sec-1-2">License</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-
 # confo - simple config file reader<a id="sec-1" name="sec-1"></a>
 
 [![img](http://img.shields.io/npm/v/confo.svg)](https://www.npmjs.com/package/confo)
 [![img](http://img.shields.io/npm/l/confo.svg)](https://www.npmjs.com/package/confo)
-[![img](http://img.shields.io/github/stars/evilrobts/confo.svg)](https://github.com/evilrobts/confo)
+[![img](http://img.shields.io/github/stars/ssbb/confo.svg)](https://github.com/ssbb/confo)
 [![img](http://img.shields.io/npm/dm/confo.svg)](https://www.npmjs.com/package/confo)
-[![img](http://img.shields.io/travis/evilrobts/confo.svg)](https://travis-ci.org/evilrobts/confo)
-[![img](http://img.shields.io/coveralls/evilrobts/confo.svg)](https://coveralls.io/r/evilrobts/confo)
+[![img](http://img.shields.io/travis/ssbb/confo.svg)](https://travis-ci.org/ssbb/confo)
+[![img](http://img.shields.io/coveralls/ssbb/confo.svg)](https://coveralls.io/r/ssbb/confo)
 
 Managing configs for different environments (based on `NODE_ENV` variable) in `js` or `json` format.
 
